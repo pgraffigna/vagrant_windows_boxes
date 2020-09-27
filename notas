@@ -1,0 +1,18 @@
+# creacion del vagrant box
+vagrant package --base "VM_NAME" --output "OUTPUT_VM_NAME"
+
+# agregar box local
+vagrant box add pgraffigna/windows10-64 file:///home/quentin/boxes_vagrant/Windows10-64.box 
+
+# listar boxes
+vagrant box list
+
+# Crear Vagrantfile
+vagrant init
+
+# Editar el Vagrantfile
+# Iniciar la VM
+vagrant up
+
+# Acceder vía RDP
+vagrant rdp
